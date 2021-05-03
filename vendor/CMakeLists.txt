@@ -1,0 +1,2 @@
+set(BUILD_CPR_TESTS 0)
+

@@ -15,6 +15,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CPR_LIBRARIES cpr CACHE INTERNAL "")
+set(ELASTIC_LIBRARIES elastic CACHE INTERNAL "")
 
 macro(cpr_option OPTION_NAME OPTION_TEXT OPTION_DEFAULT)
     option(${OPTION_NAME} ${OPTION_TEXT} ${OPTION_DEFAULT})
@@ -268,6 +269,8 @@ endif()
 
 add_subdirectory(cpr)
 add_subdirectory(include)
+add_subdirectory(elastic)
+
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME AND CPR_BUILD_TESTS)
     enable_testing()

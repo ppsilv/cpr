@@ -26,7 +26,8 @@ macro(add_cpr_test _TEST_NAME)
         test_server
         GTest::GTest
         cpr::cpr
-        CURL::libcurl)
+        CURL::libcurl
+        elasticplusplus)
     add_test(NAME cpr_${_TEST_NAME}_tests COMMAND ${_TEST_NAME}_tests)
     # Group under the "tests" project folder in IDEs such as Visual Studio.
     set_property(TARGET ${_TEST_NAME}_tests PROPERTY FOLDER "tests")
@@ -36,6 +37,7 @@ macro(add_cpr_test _TEST_NAME)
     endif()
 endmacro()
 
+add_cpr_test(app)
 add_cpr_test(get)
 add_cpr_test(post)
 add_cpr_test(session)
