@@ -38,6 +38,7 @@ macro(add_cpr_test _TEST_NAME)
 endmacro()
 
 add_cpr_test(app)
+add_cpr_test(app1)
 add_cpr_test(get)
 add_cpr_test(post)
 add_cpr_test(session)
