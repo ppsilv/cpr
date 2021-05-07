@@ -1,4 +1,5 @@
 # C++ Requests: Curl for People <img align="right" height="40" src="http://i.imgur.com/d9Xtyts.png">
+This project was forked from https://whoshuu.github.io/cpr/ but as I have some problems I created this project from that fork.
 
 [![Documentation](https://img.shields.io/badge/docs-online-informational?style=flat&link=https://whoshuu.github.io/cpr/)](https://whoshuu.github.io/cpr/)
 ![CI](https://github.com/whoshuu/cpr/workflows/CI/badge.svg)
